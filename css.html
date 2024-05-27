@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Introduction to CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Selector Examples */
+        /* Type Selector */
+        h1 {
+            color: #333333;
+            text-align: center;
+        }
+
+        /* Class Selector */
+        .intro {
+            color: #ff6347;
+            font-size: 20px;
+            margin: 20px;
+        }
+
+        /* ID Selector */
+        #highlight {
+            background-color: #ffd700;
+            padding: 10px;
+            border: 1px solid #333333;
+        }
+
+        /* Grouping Selectors */
+        p, ul {
+            color: #333333;
+            margin: 20px;
+        }
+
+        /* Descendant Selector */
+        div p {
+            color: #4b0082;
+        }
+
+        /* Pseudo-class Selector */
+        a:hover {
+            color: #ff4500;
+        }
+
+        /* Pseudo-element Selector */
+        p::first-line {
+            font-weight: bold;
+            color: #00008b;
+        }
+
+        /* Colors Example */
+        .color-example {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .color-box {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .red {
+            background-color: #ff0000;
+        }
+
+        .green {
+            background-color: #008000;
+        }
+
+        .blue {
+            background-color: #0000ff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to CSS Introduction</h1>
+
+    <p class="intro">CSS (Cascading Style Sheets) is a language used to describe the presentation of a document written in HTML or XML. It helps to style your web pages.</p>
+
+    <p id="highlight">This paragraph is highlighted using an ID selector.</p>
+
+    <div>
+        <p>This paragraph is inside a div and styled using a descendant selector.</p>
+    </div>
+
+    <ul>
+        <li>This is a list item styled using a type selector.</li>
+        <li>Another list item styled the same way.</li>
+    </ul>
+
+    <p>Hover over this <a href="#">link</a> to see the pseudo-class selector in action.</p>
+
+    <p>This is a paragraph demonstrating the <code>::first-line</code> pseudo-element selector.</p>
+
+    <div class="color-example">
+        <div class="color-box red">Red</div>
+        <div class="color-box green">Green</div>
+        <div class="color-box blue">Blue</div>
+    </div>
+
+</body>
+</html>

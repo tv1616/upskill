@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript If-Else Example</title>
+</head>
+<body>
+    <h1>JavaScript If-Else Example</h1>
+    <div id="output"></div>
+
+    <script>
+        // Define a variable
+        var number = 10;
+
+        // If-Else Statement
+        if (number > 0) {
+            document.getElementById("output").innerHTML = number + " is a positive number.";
+        } else if (number < 0) {
+            document.getElementById("output").innerHTML = number + " is a negative number.";
+        } else {
+            document.getElementById("output").innerHTML = number + " is zero.";
+        }
+
+        // Another example with different variable
+        var age = 18;
+
+        // If-Else Statement
+        if (age >= 18) {
+            document.getElementById("output").innerHTML += "<br>You are an adult.";
+        } else {
+            document.getElementById("output").innerHTML += "<br>You are a minor.";
+        }
+    </script>
+</body>
+</html>

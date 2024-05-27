@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Loops</title>
+</head>
+<body>
+
+<h2>JavaScript Loops</h2>
+
+<script>
+    // For Loop
+    document.write("<h3>For Loop:</h3>");
+    for (let i = 0; i < 5; i++) {
+        document.write("The number is " + i + "<br>");
+    }
+
+    // While Loop
+    document.write("<h3>While Loop:</h3>");
+    let j = 0;
+    while (j < 5) {
+        document.write("The number is " + j + "<br>");
+        j++;
+    }
+
+    // Do-While Loop
+    document.write("<h3>Do-While Loop:</h3>");
+    let k = 0;
+    do {
+        document.write("The number is " + k + "<br>");
+        k++;
+    } while (k < 5);
+
+    // For-In Loop
+    document.write("<h3>For-In Loop:</h3>");
+    const person = {fname:"John", lname:"Doe", age:25};
+    for (let x in person) {
+        document.write(x + ": " + person[x] + "<br>");
+    }
+
+    // For-Of Loop
+    document.write("<h3>For-Of Loop:</h3>");
+    const array = [10, 20, 30, 40, 50];
+    for (let value of array) {
+        document.write("Value: " + value + "<br>");
+    }
+</script>
+
+</body>
+</html>

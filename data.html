@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Data Types and Operators</title>
+</head>
+<body>
+    <h1>JavaScript Data Types and Operators</h1>
+    <div id="output"></div>
+
+    <script>
+        // Data Types
+        var number = 42;                  // Number
+        var text = "Hello, World!";       // String
+        var isTrue = true;                // Boolean
+        var nothing = null;               // Null
+        var notDefined;                   // Undefined
+        var obj = { name: "John" };       // Object
+        var array = [1, 2, 3];            // Array
+
+        // Operators
+        var addition = number + 10;        // Addition
+        var subtraction = number - 10;     // Subtraction
+        var multiplication = number * 2;   // Multiplication
+        var division = number / 2;         // Division
+        var modulus = number % 10;         // Modulus
+        var increment = number + 1;        // Increment
+        var decrement = number - 1;        // Decrement
+
+        // Output to the HTML
+        document.getElementById("output").innerHTML = `
+            <p><strong>Data Types:</strong></p>
+            <p>Number: ${number}</p>
+            <p>String: ${text}</p>
+            <p>Boolean: ${isTrue}</p>
+            <p>Null: ${nothing}</p>
+            <p>Undefined: ${notDefined}</p>
+            <p>Object: ${JSON.stringify(obj)}</p>
+            <p>Array: ${array}</p>
+
+            <p><strong>Operators:</strong></p>
+            <p>Addition (number + 10): ${addition}</p>
+            <p>Subtraction (number - 10): ${subtraction}</p>
+            <p>Multiplication (number * 2): ${multiplication}</p>
+            <p>Division (number / 2): ${division}</p>
+            <p>Modulus (number % 10): ${modulus}</p>
+            <p>Increment (number + 1): ${increment}</p>
+            <p>Decrement (number - 1): ${decrement}</p>
+        `;
+    </script>
+</body>
+</html>
